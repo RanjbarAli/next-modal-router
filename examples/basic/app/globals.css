@@ -1,0 +1,15 @@
+:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #f5f5f3; color: #171717; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+button, a.card { font: inherit; }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 20px max(24px, calc((100vw - 1000px) / 2)); border-bottom: 1px solid #ddd; background: #fff; }
+.nav { display: flex; gap: 18px; }
+.main { max-width: 1000px; margin: 0 auto; padding: 64px 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 32px; }
+.card { display: block; padding: 24px; border: 1px solid #ddd; border-radius: 14px; background: #fff; text-decoration: none; }
+.backdrop { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 24px; background: rgb(0 0 0 / .55); }
+.modal { position: relative; width: min(620px, 100%); padding: 32px; border-radius: 18px; background: #fff; box-shadow: 0 24px 80px rgb(0 0 0 / .3); }
+.drawer { position: fixed; z-index: 20; inset: 0 0 0 auto; width: min(440px, 90vw); padding: 32px; background: #171717; color: white; box-shadow: -20px 0 60px rgb(0 0 0 / .3); }
+.close { border: 1px solid currentColor; border-radius: 999px; padding: 8px 14px; background: transparent; color: inherit; cursor: pointer; }
+.tabs { display: flex; gap: 12px; margin: 24px 0; }
